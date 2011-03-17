@@ -1,2 +1,34 @@
-# IMJs - A Simple Javascript Instant Messenging Application
-# Author - Dominic Charley-Roy
+ImJS - A Simple Javascript Instant Messenging Application
+Author - Dominic Charley-Roy
+
+------------------------------------------------------------------------------
+
+Requirements
+
+  = A properly configured Apache server with PHP5 running
+  = A MySQL server
+  
+  -or-
+
+  = A properly configured [W/M/L]AMP server
+
+------------------------------------------------------------------------------
+
+Setup:
+
+  1. Run the 'tables.sql' script in the 'data' folder to initialize the tables
+     and any accompying data.
+
+  2. Setup your MySQL information in the includes/config.php file
+
+  3. At the moment, accounts must be manually inserted into the database. You
+     may generate a password through the 'generate.php' form. Once you have 
+     created an account, you may login.
+
+------------------------------------------------------------------------------
+
+Pre-generated Passwords (With default hashes)
+
+  'admin' - a605c3ab39fb6ed41f60ecd9f6a99ef39ae8d50b29368c13b7d53261c7606e60
+  'test'  - d4e83a310a95d150a4c2af8673cee07a1d079f3b445f1eb4a052af8e61405514
+

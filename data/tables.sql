@@ -1,0 +1,20 @@
+-- IMJs Table Initialization
+
+DROP DATABASE IF EXISTS `imjs`;
+
+CREATE DATABASE  `imjs` ;
+
+CREATE TABLE  `imjs`.`user` (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`username` VARCHAR( 20 ) NOT NULL ,
+`password` VARCHAR( 64 ) NOT NULL ,
+`email` VARCHAR( 80 ) NOT NULL
+) ENGINE = INNODB CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+CREATE TABLE  `imjs`.`message` (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`sender` INT NOT NULL ,
+`receiver` INT NOT NULL ,
+`message` VARCHAR( 255 ) NOT NULL ,
+`time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE = INNODB CHARACTER SET utf8 COLLATE utf8_general_ci;

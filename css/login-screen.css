@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+#container {
+    text-align: center;
+}
+
+#content {
+    margin: 10% auto 0;
+    border: 1px solid black;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    background: #ffffff;
+}
+
+#content input {
+    padding: 4px 4px;
+    border: solid 1px rgb(200, 200, 200);
+    width: 160px;
+}
+
+.error {
+    display: block;
+    border: 1px solid #ffbf00;
+    background-color: #ffdc73;
+    color: red;
+}
