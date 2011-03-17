@@ -140,7 +140,9 @@ $(document).ready(function(){
                     if (data === '1') {
                         location.reload(true);
                     } else if (data != '') {
-                        data = eval(data);
+                        // Sanitize data and convert to JSON
+                        data = jQuery.parseJSON(data);
+
                         for (var i=0; i<data.length; i++){
                             // Add contacts who haven't messaged until now
                            getConversation(data[i].s, data[i].u).append(data[i].u + ': ' + data[i].m + '<br/>'); 
